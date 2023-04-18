@@ -80,7 +80,7 @@ class Aubin extends StatelessWidget {
                           ),
                         ),
          Text(
-  'GATAU',
+  'LAHIR TAHUN 2003',
   style: TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.bold,
