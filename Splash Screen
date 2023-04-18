@@ -1,0 +1,41 @@
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+class SplashScreen extends StatelessWidget {
+  const SplashScreen({Key? key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: const Color(0xffee8301),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset("assets/vokasi_putih.png"),
+            // tambah ruang antara text dan Image
+            const SizedBox(height: 25.54),
+            // Ubah styling teks
+            const Text(
+              'Sekolah Vokasi',
+              style: GoogleFonts.poppins(
+                fontSize: 28,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+            // salin style
+            const Text(
+              'Unggul, Mandiri & Berkarakter',
+              style: GoogleFonts.poppins(
+                fontSize: 12,
+                fontWeight: FontWeight.w400,
+                color: Colors.white,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
